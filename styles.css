@@ -6,7 +6,7 @@ body {
 	font: 10px arial, sans-serif;
 	margin: 0px;
 }
-													/*Header*/
+
 header {
 	width: 100%;
 	height: 60px;
@@ -25,7 +25,6 @@ header {
 }
 
 header ul {
-	margin: 0;
 	float: right;
 	margin: -5px 0 0 0;
 }
@@ -47,11 +46,9 @@ header li:hover {
 }
 
 li {
-	list-style: none;
 	display: inline;
 	padding: 10px;
 	cursor: pointer;
-	height: 55px;
 }
 
 .USD {
@@ -68,7 +65,7 @@ li {
 .fullWidthHide {
 	display: none;
 }
-												/*Navigation*/
+
 nav {
 	padding: 30px 30px 10px 50px;
 	font-weight: bold;
@@ -120,21 +117,16 @@ nav ul {
 	padding: 2px;
 	font-size: 0.7rem;
 	position: absolute;
-	left: 180px;
+	left: 150px;
 	top: -5px;
-
 }
-												/*Main Hero*/
+
 main {
 	background-image: url('https://cdn.shopify.com/s/files/1/1634/8185/t/2/assets/slide1_image.jpg?2347922992084791194');
 	background-size: cover;
 	background-position: center;
 	position: relative;
 	height: 500px;
-}
-
-main img {
-	width: 100%;
 }
 
 .heroText {
@@ -170,49 +162,40 @@ main img {
 	border-width: 2px;
 	cursor: pointer;
 }
-												/*Main CTA*/
+
 .callToAction {
-	padding: 0 0 0 50px;
 	position: absolute;
 	top: 80%;
+	overflow: auto;
 	width: 100%;
+	text-align: center;
 }
 
-.callToAction div {
-	height: 200px;
-	width: 30%;
-	margin: 0 30px 0 5px;
-	float: left;
+.CTA {
+	width: 300px;
+	margin: 0 10px;
 	cursor: pointer;
 }
 
-.ctaLeft {
-	background-color: #3C3A3C;
-} 
-
-.ctaCenter {
-	background-color: #2E85B4;
-} 
-
-.ctaRight {
-	background-color: #4EAED8;
-} 
-												/*Section Products*/
 .products {
 	width: 100%;
-	padding: 100px 0 100px 50px;
+	padding: 150px 50px 100px 50px;
 	text-align: center;
 	font-size: 1rem;
 	font-kerning: normal;
 }
 
 .items {
-	width: 22%;
+	width: 20%;
 	display: inline-block;
-	margin: 40px 25px 0 0;
+	margin: 40px 10px 0 10px;
 	vertical-align: top;
 	font-size: 0.8rem;
 	cursor: pointer;
+}
+
+.items img {
+	width: 200px;
 }
 
 .products h6 {
@@ -248,56 +231,29 @@ main img {
 	height: 40px;
 }
 
-@media screen and (max-width: 1200px) {
-	.callToAction div {
-		height: 150px;
-		width: 30%;
-		margin: 0 10px 0 5px;
-		float: left;
-		cursor: pointer;
+@media screen and (max-width: 1105px) {
+	.CTA {
+		width: 225px;
+		margin: 0 5px;
+	}
+
+	.products {
+		padding: 100px 0;
+	}
+
 }
 
-												/*Navigation 985 width*/
 @media screen and (max-width: 985px) {
-	
-		nav img {
-			margin: 0 auto;
-			display: block;
-		}
 
-		.dropdownMenu800 {
-			display: block;
-			height: 50px;
-			width: 100%;
-			margin: 20px auto;
-			padding: 15px 0 0 5px;
-			border-style: solid;
-			border-color: #000000;
-			border-width: 1.5px;
-		}
-
-		nav {
-			padding: 30px 25px 10px 25px;
-			position: static;
-		}
-		
-		.hide960 {
-			display: none;
-		}
-}
-	
-@media screen and (max-width: 800px) {
-												/*Header 800 width*/
 	header {
 		height: 70px;
 		text-align: center;
-		padding: 0px;
 	}
-	
+
 	.hide800 {
 		display: none;
 	}
-	
+
 	.cart800width {
 		float: left;
 		display: block;
@@ -307,30 +263,58 @@ main img {
 		padding: 0;
 		margin: -5px;
 	}
-	
+
 	.cart800image::before {
-	content: url('img/cart.png');
-	position: relative;
-	top: 10px;
+		content: url('img/cart.png');
+		position: relative;
+		top: 10px;
 	}
-	
+
 	.search800width {
 		display: block;
 		float: right;
 		margin: 0;
 	}
-	
+
 	.search800width::after {
-	content: url('img/searchIcon.png');
-	margin: 0;
+		content: url('img/searchIcon.png');
+		margin: 0;
 	}
 
 	.header800menu {
 		width: 100%;
 		margin:10px 0 0 0;
 	}
+	nav img {
+		margin: 0 auto;
+		display: block;
+	}
 
-												/*Main Hero 800 width*/
+	nav div {
+		float: none;
+		margin: 0;
+	}
+
+	.dropdownMenu800 {
+		display: block;
+		height: 50px;
+		margin: 20px auto;
+		padding: 15px 0 0 5px;
+		border-style: solid;
+		border-color: #000000;
+		border-width: 1.5px;
+	}
+
+	nav {
+		position: static;
+		text-align: center;
+		padding: 10px 20px;
+	}
+
+	main {
+		height: 400px;
+	}
+
 	.heroText {
 		top: 15%;
 	}
@@ -341,152 +325,81 @@ main img {
 		letter-spacing: 1.25px;
 		margin: 0;
 	}
-		
+
 	.heroText p {
 		font-size: 0.75rem;
 		letter-spacing: 1px;
 	}
-												/*Main CTA 800 width*/		
 
 
-	.callToAction {
-		padding: 0 0 0 15px;
-	}
-	
-	.callToAction div {
-		height: 150px;
-		margin: 0 15px 0 5px;
-	}
-												/*Section Products 800 width*/
-	.products {
-		padding: 100px 15px;
-	}
-	
+
 	.items {
 		margin: 40px 5px;
 		width: 30%;
 	}
-	
+
 	.products img {
 		width: 100%;
 	}
+
+	.hide960 {
+		display: none;
+	}
+
 }
-
-@media screen and (max-width: 475px) {
-
-												/*Header 475 width*/	
-	header {
-		width: 100%;
-		height: 100px;
-		background-color: #F8F8F8;
-		color: #B7B7B8;
-		overflow: auto;
-		position: relative;
-		padding: 0px 25px 0px 25px;
-		font-weight: bold;
-		font-size: 0.8rem;
-	}
 	
-	.hide800 {
+@media screen and (max-width: 765px) {
+	.hide765 {
 		display: none;
 	}
-	
-	.hide475 {
-		display: none;
-	}
-	
-	.search800width {
-		display: block;
-		position: absolute;
-		top: 5px;
-		left: 35%;
-		margin: -10px auto 0 auto;
-	}
-	
-	.search800width::after {
-	content: url('img/searchIcon.png');
-	}
-
-	.cart475 {
-		display: block;
-		float: left;
-	}
-
-	.cart475::before {
-		content: url('img/cart.png');
-		position: relative;
-		top: 10px;
-	}
-	
-	.USD475 {
-		display: block;
-		float: right;
-		margin: 40px 0 0 0;
-	}
-
-	.header800menu {
-		width: 350px;
-		margin: 5px auto;
-		position: relative;
-	}
-												/*Main Hero 475 width*/	
 
 	main {
-		height: 200px;
-	}	
-											
-	.heroText h1 {
-	font-size: 1.3rem;
-	letter-spacing: 1.25px;
-	}
-	
-	.heroText p {
-		display: none;
-	}
-	
-												/*Main CTA 475 width*/		
-		
-	.callToAction {
-		position: absolute;
-		top: 200px;
 		height: 300px;
-		padding: 30px 50px;
 	}
 
-	.callToAction div {
-		height: 250px;
-		width: 100%;
-		margin: 0 auto;
+	.callToAction {
+		top: 325px;
 	}
-												/*Section Products 475 width*/
+
+	.CTA {
+		width: 350px;
+	}
+
 	.products {
 		padding: 300px 15px;
 	}
-	
+
 	.products h3 {
 		margin: 20px 0 40px 0;
 	}
-	
+
 	.items {
 		display: block;
 		width: 100%;
 		margin: 5px 0 0 0;
 	}
-	
+
 	.items img {
-		width: 30%;
-		height: 158px;
+		width: 175px
 	}
-	
+
 	.itemText {
-		width: 60%;
-		height: 158px;
-		vertical-align: top;
+		width: 70%;
 		float: right;
+
 	}
-	
+
 	.itemText h6 {
 		margin: 30px 0 0 0;
 	}
 
+	.hide475 {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 630px) {
+	.items img {
+		width: 100px
+	}
 }
