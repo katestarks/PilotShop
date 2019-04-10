@@ -34,13 +34,13 @@ header li:hover {
 }
 
 .cart::before {
-	content: url('img/cart.png');
+	content: url('../img/cart.png');
 	position: relative;
 	top: 10px;
 }
 
 .search::after {
-	content: url('img/searchIcon.png');
+	content: url('../img/searchIcon.png');
 	position: relative;
 	top: 10px;
 }
@@ -185,6 +185,10 @@ main {
 	font-kerning: normal;
 }
 
+#productItems {
+	width: 100%;
+}
+
 .items {
 	width: 20%;
 	display: inline-block;
@@ -192,6 +196,7 @@ main {
 	vertical-align: top;
 	font-size: 0.8rem;
 	cursor: pointer;
+	position: relative;
 }
 
 .items img {
@@ -207,6 +212,17 @@ main {
 	color: #579DC0;
 	font-weight: bold;
 	font-size: 1.2rem;
+}
+
+.discountPercent {
+	background-color: #FF0000;
+	color: #FFFFFF;
+	border-radius: 50%;
+	width: 34px;
+	height: 34px;
+	position: absolute;
+	top: 10px;
+	left: 15px;
 }
 
 .fullPrice {
@@ -265,7 +281,7 @@ main {
 	}
 
 	.cart800image::before {
-		content: url('img/cart.png');
+		content: url('../img/cart.png');
 		position: relative;
 		top: 10px;
 	}
@@ -277,7 +293,7 @@ main {
 	}
 
 	.search800width::after {
-		content: url('img/searchIcon.png');
+		content: url('../img/searchIcon.png');
 		margin: 0;
 	}
 
