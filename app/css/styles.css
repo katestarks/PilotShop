@@ -1,0 +1,293 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  font: 10px arial, sans-serif;
+  margin: 0px; }
+
+header {
+  width: 100%;
+  height: 60px;
+  background-color: #F8F8F8;
+  color: #B7B7B8;
+  position: relative;
+  font-weight: bold;
+  font-size: 0.8rem;
+  display: inline-block; }
+  header ul {
+    float: right;
+    margin: -5px 0 0 0; }
+  header li {
+    color: #B7B7B8; }
+    header li:hover {
+      color: #2D85B3; }
+
+.telephone {
+  float: left;
+  margin: 25px 0 0 50px;
+  padding: 0; }
+
+.cart::before {
+  content: url("../img/cart.png");
+  position: relative;
+  top: 10px; }
+
+.search::after {
+  content: url("../img/searchIcon.png");
+  position: relative;
+  top: 10px; }
+
+li {
+  display: inline;
+  padding: 10px;
+  cursor: pointer; }
+
+.USD {
+  border-right: solid;
+  border-left: solid;
+  border-width: 0.5px;
+  padding: 18px; }
+
+.hoverNoColor:hover {
+  color: #B7B7B8; }
+
+.fullWidthHide {
+  display: none; }
+
+nav {
+  padding: 30px 30px 10px 50px;
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: #FFFFFF;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  overflow: auto; }
+  nav img {
+    margin: auto 0; }
+  nav div {
+    float: right;
+    position: relative; }
+  nav ul {
+    padding: 0; }
+
+.navMenu {
+  border-style: solid;
+  border-color: #FFFFFF;
+  border-width: 2px; }
+  .navMenu:hover {
+    border-style: solid;
+    border-color: #000000;
+    border-width: 2px;
+    padding: 10px;
+    height: 55px; }
+
+.active {
+  border-style: solid;
+  border-color: #000000;
+  padding: 10px;
+  border-width: 2px; }
+
+.hotDeals {
+  background-color: #E22A2F;
+  color: #FFFFFF;
+  padding: 2px;
+  font-size: 0.7rem;
+  position: absolute;
+  left: 150px;
+  top: -5px; }
+
+main {
+  background-image: url("https://cdn.shopify.com/s/files/1/1634/8185/t/2/assets/slide1_image.jpg?2347922992084791194");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 500px; }
+
+.heroText {
+  position: absolute;
+  left: 0;
+  top: 30%;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 2rem;
+  width: 100%; }
+  .heroText h1 {
+    letter-spacing: 15px;
+    margin: 42px 0 25px 0; }
+  .heroText p {
+    font-size: 1rem;
+    letter-spacing: 2.5px; }
+
+.heroButton {
+  width: 120px;
+  margin: 0 auto;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1rem;
+  padding: 10px;
+  border-style: solid;
+  border-color: #FFFFFF;
+  background-color: transparent;
+  border-width: 2px;
+  cursor: pointer; }
+
+.callToAction {
+  position: absolute;
+  top: 80%;
+  overflow: auto;
+  width: 100%;
+  text-align: center; }
+
+.CTA {
+  width: 300px;
+  margin: 0 10px;
+  cursor: pointer; }
+
+.products {
+  width: 100%;
+  padding: 150px 50px 100px 50px;
+  text-align: center;
+  font-size: 1rem;
+  font-kerning: normal; }
+
+#productItems {
+  width: 100%; }
+
+.items {
+  width: 20%;
+  display: inline-block;
+  margin: 40px 10px 0 10px;
+  vertical-align: top;
+  font-size: 0.8rem;
+  cursor: pointer;
+  position: relative; }
+  .items img {
+    width: 200px; }
+
+.products h6 {
+  font-size: 0.85rem;
+  margin: 10px 0 5px 0; }
+
+.productCost {
+  color: #579DC0;
+  font-weight: bold;
+  font-size: 1.2rem; }
+
+.fullPrice {
+  text-decoration: line-through; }
+
+.settingsCog {
+  width: 60px;
+  height: 60px;
+  background-color: #797D7C;
+  position: fixed;
+  top: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 10px 10px 0;
+  opacity: 0.5; }
+  .settingsCog img {
+    width: 40px;
+    height: 40px; }
+
+@media screen and (max-width: 1105px) {
+  .CTA {
+    width: 225px;
+    margin: 0 5px; }
+  .products {
+    padding: 100px 0; } }
+
+@media screen and (max-width: 985px) {
+  header {
+    height: 70px;
+    text-align: center; }
+  .cartMdWidth {
+    float: left;
+    display: block;
+    border-left: solid;
+    border-color: #B7B7B8;
+    border-width: 0.5px;
+    padding: 0;
+    margin: -5px; }
+  .cartMdimage::before {
+    content: url("../img/cart.png");
+    position: relative;
+    top: 10px; }
+  .searchMdwidth {
+    display: block;
+    float: right;
+    margin: 0; }
+  .searchMdwidth::after {
+    content: url("../img/searchIcon.png");
+    margin: 0; }
+  .headerMdMenu {
+    width: 100%;
+    margin: 10px 0 0 0; }
+  nav img {
+    margin: 0 auto;
+    display: block; }
+  nav div {
+    float: none;
+    margin: 0; }
+  .dropdownMenuMd {
+    display: block;
+    height: 50px;
+    margin: 20px auto;
+    padding: 15px 0 0 5px;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 1.5px; }
+  nav {
+    position: static;
+    text-align: center;
+    padding: 10px 20px; }
+  main {
+    height: 400px; }
+  .heroText {
+    top: 15%; }
+    .heroText h1 {
+      text-align: center;
+      font-size: 2.75rem;
+      letter-spacing: 1.25px;
+      margin: 0; }
+    .heroText p {
+      font-size: 0.75rem;
+      letter-spacing: 1px; }
+  .items {
+    margin: 40px 5px;
+    width: 30%; }
+  .products img {
+    width: 100%; }
+  .hideMd {
+    display: none; } }
+
+@media screen and (max-width: 765px) {
+  main {
+    height: 300px; }
+  .callToAction {
+    top: 325px; }
+  .CTA {
+    width: 350px; }
+  .products {
+    padding: 300px 15px; }
+  .products h3 {
+    margin: 20px 0 40px 0; }
+  .items {
+    display: block;
+    width: 100%;
+    margin: 5px 0 0 0; }
+  .items img {
+    width: 175px; }
+  .itemText {
+    width: 70%;
+    float: right; }
+    .itemText h6 {
+      margin: 30px 0 0 0; }
+  .hideSm {
+    display: none; } }
+
+@media screen and (max-width: 630px) {
+  .items img {
+    width: 100px; } }
