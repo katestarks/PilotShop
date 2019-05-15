@@ -2,34 +2,34 @@
 <html>
 <head>
 	<title>PILOT SHOP | PILOT SHOP</title>
-	<link rel='stylesheet' type='text/css' href='css/normalize.css'/>
-	<link rel='stylesheet' type='text/css' href='css/styles.css'/>
-	<script src="js/handlebars-v4.1.1.js" defer></script>
-	<script src="js/index.js" defer></script>
+	<link rel='stylesheet' type='text/css' href='app/css/normalize.css'/>
+	<link rel='stylesheet' type='text/css' href='app/css/styles.css'/>
+	<script src="app/js/handlebars-v4.1.1.js" defer></script>
+	<script src="app/js/index.js" defer></script>
 </head>
 
 <body>
 	<header>
-		<p class='telephone hide800'>+800-2345-6789</p>
-		<ul class='cart800width fullWidthHide hide475'>
-			<li class='cart800image'>CART 0</li>
+		<p class='telephone hideMd'>+800-2345-6789</p>
+		<ul class='cartMdWidth fullWidthHide hideSm'>
+			<li class='cartMdimage'>CART 0</li>
 			<li>USD</li>
 		</ul>
-		<p class='search800width fullWidthHide'>SEARCH STORE</P>
-		<p class='cart475 fullWidthHide hide800'>CART 0</p>
-		<p class='USD475 fullWidthHide hide800'>USD</p>
-		<ul class='header800menu'>
+		<p class='searchMdwidth fullWidthHide'>SEARCH STORE</P>
+		<p class='fullWidthHide'>CART 0</p>
+		<p class='fullWidthHide'>USD</p>
+		<ul class='headerMdMenu'>
 			<li>MY ACCOUNT</li>
 			<li>WISHLIST</li>
 			<li>CHECKOUT</li>
-			<li class='USD hoverNoColor hide800'>USD</li>
-			<li class='cart hide800'>CART 0</li>
-			<li class='search hoverNoColor hide800'>SEARCH STORE</li>
+			<li class='USD hoverNoColor hideMd'>USD</li>
+			<li class='cart hideMd'>CART 0</li>
+			<li class='search hoverNoColor hideMd'>SEARCH STORE</li>
 		</ul>
 	</header>
 	<nav>
 		<img src='https://cdn.shopify.com/s/files/1/1634/8185/t/2/assets/logo.png?2347922992084791194' alt='Pilot Shop company logo'/>
-		<div class='hide960'>
+		<div class='hideMd'>
 			<ul>
 				<li class='navMenu active'>HOME</li>
 				<li class='navMenu'>PRODUCTS</li>
@@ -40,7 +40,7 @@
 			</ul>
 			<div class='hotDeals'>HOT DEALS</div>
 		</div>
-		<div class='dropdownMenu800 fullWidthHide'>PILOT SHOP</div>
+		<div class='dropdownMenuMd fullWidthHide'>PILOT SHOP</div>
 	</nav>
 	<main>
 		<div class='heroText'>
@@ -49,9 +49,9 @@
 		<button class='heroButton'>SHOP NOW!</button>	
 		</div>
 		<section class='callToAction'>
-			<img class="CTA display475" src="img/hotHeadsetsCTA.png" alt="call to action">
-			<img class="CTA hide475" src="img/onlyTheBestCTA.png" alt="call to action">
-			<img class="CTA hide475 hide765" src="img/portableGPSCTA.png" alt="call to action">
+			<img class="CTA display475" src="app/img/hotHeadsetsCTA.png" alt="call to action">
+			<img class="CTA hideSm" src="app/img/onlyTheBestCTA.png" alt="call to action">
+			<img class="CTA hideSm" src="app/img/portableGPSCTA.png" alt="call to action">
 		</section>
 	</main>
 	<section class='products'>
@@ -59,81 +59,9 @@
 		<div id="productItems">
 
 		</div>
-
-
-		<!--<div class='items'>-->
-			<!--<img src='img/Headphones.png' alt='headphones'/>-->
-			<!--<div class='itemText'>-->
-				<!--<h6>AKG AVIATION AV100 ANR HEADSET</h6>-->
-				<!--<p class='hide475'>When you deal with sky During ne...</p>-->
-				<!--<p>From <span class='productCost'>$66.00 </span>-->
-				<!--<span class='fullPrice'>$76.00</span></p>-->
-			<!--</div>-->
-		<!--</div>-->
-		<!--<div class='items'>-->
-			<!--<img src='img/bomberJacket.png' alt='bomber jacket'/>-->
-			<!--<div class='itemText'>-->
-				<!--<h6>ALPHA INDUSTRIES MEN'S CWU PILOT X FLIGHT JACKET</h6>-->
-				<!--<p class='hide475'>Whichever aircraft part you need</p>-->
-				<!--<p><span class='productCost'>$120.00</span></p>-->
-			<!--</div>-->
-		<!--</div>-->
-		<!--<div class='items'>-->
-			<!--<img src='img/aviators.png' alt='aviators'/>-->
-			<!--<div class='itemText'>-->
-				<!--<h6>AMERICAN OPTICAL ORIGINAL PILOT EYEWEAR 57MM FRAME</h6>-->
-				<!--<p class='hide475'>We serve pilots of all kinds of...</p>-->
-				<!--<p>From <span class='productCost'>$55.00 </span>-->
-				<!--<span class='fullPrice'>$65.00</span></p>-->
-			<!--</div>-->
-		<!--</div>-->
-		<!--<div class='items'>-->
-			<!--<img src='img/navigationSystem.png' alt='navigation system'/>-->
-			<!--<div class='itemText'>-->
-				<!--<h6>ASPEN AVIONICS EVOLUTION</h6>-->
-				<!--<p class='hide475'>Our store was created back in 19...</p>-->
-				<!--<p><span class='productCost'>$150.00 </span>-->
-					<!--<span class='fullPrice'>$160.00</span></p>-->
-			<!--</div>-->
-		<!--</div>-->
-		<!--<div class='items'>-->
-			<!--<img src='img/dashComputer.png' alt='onboard computer'/>-->
-			<!--<div class='itemText'>-->
-				<!--<h6>AVIDYNE EX5000 R8.0 CIRRUS MULTIFUNCTION DISPLAY</h6>-->
-				<!--<p class='hide475'>Whichever aircraft part you need...</p>-->
-				<!--<p><span class='productCost'>$90.00</span></p>-->
-			<!--</div>-->
-		<!--</div>-->
-		<!--<div class='items'>-->
-			<!--<img src='img/sunglasses.png' alt='sunglasses'/>-->
-			<!--<div class='itemText'>-->
-				<!--<h6>COCOONS FITOVERS POLARISZED SUNGLASSES PILOT (LG)</h6>-->
-				<!--<p class='hide475'>We serve pilots of all kinds of...</p>-->
-				<!--<p>From <span class='productCost'>$90.00 </span>-->
-				<!--<span class='fullPrice'>$100.00</span></p>-->
-			<!--</div>-->
-		<!--</div>-->
-		<!--<div class='items hide800'>-->
-			<!--<img src='img/wiredHeadphones.png' alt='wired headphones'/>-->
-			<!--<div class='itemText'>-->
-				<!--<h6>DAVID CLARK DC X11P PANEL ANR ENC AVIATION PILO...</h6>-->
-				<!--<p class='hide475'>Our store was created back in 19...</p>-->
-				<!--<p>From <span class='productCost'>$66.00 </span>-->
-					<!--<span class='fullPrice'>$76.00</span></p>-->
-			<!--</div>-->
-		<!--</div>-->
-		<!--<div class='items hide800'>-->
-			<!--<img src='img/satNav.png' alt='mobile satnavs'/>-->
-			<!--<div class='itemText'>-->
-				<!--<h6>GARMIN AERA 796</h6>-->
-				<!--<p class='hide475'>We care about our loyal customer...</p>-->
-				<!--<p><span class='productCost'>$112.00</span></p>-->
-			<!--</div>-->
-		<!--</div>-->
 	</section>
 	<div class='settingsCog'>
-		<img src='img/settingsCog.png' alt="Cog icon"/>
+		<img src='app/img/settingsCog.png' alt="Cog icon"/>
 	</div>
-
 </body>
 </html>

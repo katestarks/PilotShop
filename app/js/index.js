@@ -18,7 +18,7 @@ var products =
             "price": "$45.99",
             "originalPrice": "$75",
             "discount": "-45%",
-            "image": "img/Headphones.png",
+            "image": "app/img/Headphones.png",
             "altText": "headphones"
         },
         {
@@ -26,7 +26,7 @@ var products =
             "desc": "An awesome coat",
             "price": "$120",
             "originalPrice": "$120",
-            "image": "img/bomberJacket.png",
+            "image": "app/img/bomberJacket.png",
             "altText": "bomber jacket"
         },
         {
@@ -35,7 +35,7 @@ var products =
             "price": "$55",
             "originalPrice": "$65",
             "discount": "-15%",
-            "image": "img/aviators.png",
+            "image": "app/img/aviators.png",
             "altText": "aviators"
         },
         {
@@ -44,7 +44,7 @@ var products =
             "price": "$150",
             "originalPrice": "$160",
             "discount": "-6%",
-            "image": "img/navigationSystem.png",
+            "image": "app/img/navigationSystem.png",
             "altText": "navigation system"
         },
         {
@@ -53,7 +53,7 @@ var products =
             "price": "$45.99",
             "originalPrice": "$75",
             "discount": "-45%",
-            "image": "img/dashComputer.png",
+            "image": "app/img/dashComputer.png",
             "altText": "onboard computer"
         },
         {
@@ -61,7 +61,7 @@ var products =
             "desc": "We serve pilots of all kinds of...",
             "price": "$120",
             "originalPrice": "$120",
-            "image": "img/sunglasses.png",
+            "image": "app/img/sunglasses.png",
             "altText": "sunglasses"
         },
         {
@@ -70,7 +70,7 @@ var products =
             "price": "$66.00",
             "originalPrice": "$76.00",
             "discount": "-15%",
-            "image": "img/wiredHeadphones.png",
+            "image": "app/img/wiredHeadphones.png",
             "altText": "wired headphones"
         },
         {
@@ -78,7 +78,7 @@ var products =
             "desc": "We care about our loyal customer",
             "price": "$112",
             "originalPrice": "$160",
-            "image": "img/satNav.png",
+            "image": "app/img/satNav.png",
             "altText": "mobile satnavs"
         }
     ]
